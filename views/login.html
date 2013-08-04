@@ -3,6 +3,7 @@
 <html>
   <head>
     <title>Login</title>
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       .label {text-align: right}
       .error {color: red}
@@ -11,37 +12,40 @@
   </head>
 
   <body>
-    <h2>Login</h2>
-    <form method="post">
-      <table>
-        <tr>
-          <td class="label">
-            Username
-          </td>
-          <td>
-            <input type="text" name="username" value="{{username}}">
-          </td>
-          <td class="error">
-          </td>
-        </tr>
-
-        <tr>
-          <td class="label">
-            Password
-          </td>
-          <td>
-            <input type="password" name="password" value="">
-          </td>
-          <td class="error">
-	    {{login_error}}
-            
-          </td>
-        </tr>
-
-      </table>
-
-      <input type="submit">
-    </form>
+    Not a user yet? <a href="/signup">Sign Up</a><p>
+    <div class="container">
+	    <h2>Login</h2>
+	    <form method="post">
+	      <table>
+	        <tr>
+	          <td class="label">
+	            Username
+	          </td>
+	          <td>
+	            <input type="text" name="username" value="{{username}}">
+	          </td>
+	          <td class="error">
+	          </td>
+	        </tr>
+	
+	        <tr>
+	          <td class="label">
+	            Password
+	          </td>
+	          <td>
+	            <input type="password" name="password" value="">
+	          </td>
+	          <td class="error">
+		    {{login_error}}
+	            
+	          </td>
+	        </tr>
+	
+	      </table>
+	
+		  <button class="btn btn-primary" type="summit">Login</button>	
+	    </form>
+	</div>
   </body>
 
 </html>
